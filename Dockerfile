@@ -17,7 +17,7 @@ COPY files/registry.txt $CONAN_USER_HOME/.conan/
 
 RUN git clone https://github.com/ess-dmsc/utils.git && \
     cd utils && \
-    git checkout 0c68070e822689dd0115d3a13db87b066a76f564 && \
+    git checkout de71215c3ee781b2707c096cb7516b34fc239593 && \
     scl enable devtoolset-6 -- make install
 
 RUN adduser jenkins
