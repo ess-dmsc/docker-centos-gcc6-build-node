@@ -15,6 +15,8 @@ RUN mkdir $CONAN_USER_HOME && \
 
 COPY files/registry.txt $CONAN_USER_HOME/.conan/
 
+COPY files/default_profile $CONAN_USER_HOME/.conan/profiles/default
+
 RUN git clone https://github.com/ess-dmsc/utils.git && \
     cd utils && \
     git checkout 98b81cf00f80ceb8383eb4dc6abb27669959e11b && \
