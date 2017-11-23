@@ -19,7 +19,7 @@ COPY files/default_profile $CONAN_USER_HOME/.conan/profiles/default
 
 RUN git clone https://github.com/ess-dmsc/utils.git && \
     cd utils && \
-    git checkout 98b81cf00f80ceb8383eb4dc6abb27669959e11b && \
+    git checkout 3f89fad6e801471baabee446ba4d327e54642b32 && \
     scl enable devtoolset-6 -- make install
 
 RUN adduser jenkins
