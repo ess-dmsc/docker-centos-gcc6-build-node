@@ -1,7 +1,7 @@
 FROM centos
 
 RUN yum -y install centos-release-scl epel-release && \
-    yum -y install cloc cmake cmake3 cppcheck devtoolset-6 doxygen findutils git graphviz lcov mpich-3.2-devel rh-python35 vim-common \
+    yum -y install bzip2 cloc cmake cmake3 cppcheck devtoolset-6 doxygen findutils git graphviz lcov mpich-3.2-devel rh-python35 vim-common \
     yum -y autoremove && \
     yum clean all
 
