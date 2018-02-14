@@ -30,4 +30,6 @@ USER jenkins
 
 WORKDIR /home/jenkins
 
+RUN conan install cmake_installer/3.10.0@conan/stable
+
 CMD ["/usr/bin/scl", "enable", "rh-python35", "devtoolset-6", "/bin/bash"]
