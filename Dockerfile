@@ -5,7 +5,7 @@ RUN yum -y install centos-release-scl epel-release && \
     yum -y autoremove && \
     yum clean all
 
-RUN scl enable rh-python35 -- pip install conan==1.0.2 coverage==4.4.2 flake8==3.5.0 gcovr==3.3 && \
+RUN scl enable rh-python35 -- pip install conan==1.0.2 coverage==4.4.2 flake8==3.5.0 gcovr==3.4 && \
     rm -rf /root/.cache/pip/*
 
 ENV CONAN_USER_HOME=/conan
